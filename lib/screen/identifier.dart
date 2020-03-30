@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:tflite/tflite.dart';
 import 'package:image_picker/image_picker.dart';
 
+const String ssd = "SSD MobileNet";
 const String yolo = "Tiny YOLOv2";
 const String efficientnet = "Efficientnet lite4";
 
@@ -15,6 +16,7 @@ class IdentifierPage extends StatefulWidget {
 }
 
 class _IdentifierPageState extends State<IdentifierPage> {
+  String _model = yolo;
   File _image;
 
   double _imageWidth;
@@ -39,16 +41,22 @@ class _IdentifierPageState extends State<IdentifierPage> {
     Tflite.close();
     try {
       String res;
-      // res = await Tflite.loadModel(
-      //   model: "assets/tflite/efficientnet_lite4_fp32.tflite",
-      //   labels: "assets/tflite/efficientnet_label.txt",
-      // );
-
-      res = await Tflite.loadModel(
-        model: "assets/tflite/yolov2_tiny.tflite",
-        labels: "assets/tflite/yolov2_tiny.txt",
-      );
-      
+      if (_model == yolo) {
+        res = await Tflite.loadModel(
+          model: "assets/tflite/yolov2_tiny.tflite",
+          labels: "assets/tflite/yolov2_tiny.txt",
+        );
+      } else if (_model == efficientnet) {
+        res = await Tflite.loadModel(
+          model: "assets/tflite/efficientnet_lite4_fp32.tflite",
+          labels: "assets/tflite/efficientnet_label.txt",
+        );
+      } else {
+        res = await Tflite.loadModel(
+          model: "assets/tflite/ssd_mobilenet.tflite",
+          labels: "assets/tflite/ssd_mobilenet.txt",
+        );
+      }
       print(res);
     } on PlatformException {
       print("Failed to load the model");
@@ -67,9 +75,13 @@ class _IdentifierPageState extends State<IdentifierPage> {
   predictImage(File image) async {
     if (image == null) return;
 
-    await yolov2Tiny(image);
-
-    // await efficientNet(image);
+    if (_model == yolo) {
+      await yolov2Tiny(image);
+    } else if (_model == efficientnet) {
+      await efficientNet(image);
+    } else {
+      await ssdMobileNet(image);
+    }
 
     FileImage(image)
         .resolve(ImageConfiguration())
@@ -108,6 +120,15 @@ class _IdentifierPageState extends State<IdentifierPage> {
         imageMean: 0.0,
         imageStd: 255.0,
         numResultsPerClass: 3);
+
+    setState(() {
+      _recognitions = recognitions;
+    });
+  }
+
+  ssdMobileNet(File image) async {
+    var recognitions = await Tflite.detectObjectOnImage(
+        path: image.path, numResultsPerClass: 3);
 
     setState(() {
       _recognitions = recognitions;
