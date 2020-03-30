@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:folium_snap/screen/search.dart';
+import 'identifier.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key key, this.title}) : super(key: key);
@@ -7,50 +9,68 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
       ),
-      body: SafeArea(child: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            FlatButton( 
-              onPressed: () => {},
-              splashColor: Theme.of(context).accentColor,
-              padding: EdgeInsets.symmetric(vertical:40, horizontal:90),
-              child: Column(
-                children: <Widget>[
-                  Icon(Icons.camera_alt, size: 120,),
-                  Text('Scan',
-                  style: TextStyle(
-                      fontSize: 20,
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              FlatButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => IdentifierPage()),
+                  );
+                },
+                splashColor: Theme.of(context).accentColor,
+                padding: EdgeInsets.symmetric(vertical: 40, horizontal: 90),
+                child: Column(
+                  children: <Widget>[
+                    Icon(
+                      Icons.camera_alt,
+                      size: 120,
                     ),
-                  ),
-                ],
-              ),
-            ),
-            FlatButton( 
-              onPressed: () => {},
-              splashColor: Theme.of(context).accentColor,
-              padding: EdgeInsets.symmetric(vertical:40, horizontal:90),
-              child: Column(
-                children: <Widget>[
-                  Icon(Icons.search, size: 120,),
-                  Text('Search', 
-                    style: TextStyle(
-                      fontSize: 20,
+                    Text(
+                      'Scan',
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+              FlatButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => PlantSearch()),
+                  );
+                },
+                splashColor: Theme.of(context).accentColor,
+                padding: EdgeInsets.symmetric(vertical: 40, horizontal: 90),
+                child: Column(
+                  children: <Widget>[
+                    Icon(
+                      Icons.search,
+                      size: 120,
+                    ),
+                    Text(
+                      'Search',
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
-      ),),
+      ),
     );
   }
-
 }
