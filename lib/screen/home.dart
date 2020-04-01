@@ -1,14 +1,28 @@
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:folium_snap/screen/search.dart';
 import 'identifier.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key key, this.title}) : super(key: key);
-
   final String title;
 
   @override
   Widget build(BuildContext context) {
+    List<CameraDescription> cameras;
+
+    Future<Null> camCheck() async {
+      WidgetsFlutterBinding.ensureInitialized();
+      try {
+        WidgetsFlutterBinding.ensureInitialized();
+        cameras = await availableCameras();
+        print("camera kitti");
+      } on CameraException catch (e) {
+        print('Error: $e.code\nError Message: $e.message');
+      }
+    }
+
+    camCheck();
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
@@ -23,7 +37,11 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => IdentifierPage()),
+                    MaterialPageRoute(
+                      builder: (context) => IdentifierPage(
+                        cameras: cameras,
+                      ),
+                    ),
                   );
                 },
                 splashColor: Theme.of(context).accentColor,

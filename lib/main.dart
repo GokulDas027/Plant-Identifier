@@ -8,13 +8,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-
-    SystemChrome.setPreferredOrientations([
+    SystemChrome.setPreferredOrientations(
+      [
         DeviceOrientation.portraitUp,
         DeviceOrientation.portraitDown,
       ],
     );
-      
+
     return MaterialApp(
       // project title
       title: 'Obtection',
@@ -23,8 +23,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         secondaryHeaderColor: Colors.greenAccent,
       ),
-      home: HomePage(title:'Folium Snap'),
+      home: HomePage(title: 'Folium Snap'),
     );
   }
 }
-
