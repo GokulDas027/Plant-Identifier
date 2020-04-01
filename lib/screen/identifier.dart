@@ -3,11 +3,11 @@ import 'package:camera/camera.dart';
 import 'package:tflite/tflite.dart';
 import 'package:flutter/material.dart';
 import 'package:folium_snap/utilities/camera.dart';
-import 'package:folium_snap/utilities/models.dart';
 import 'package:folium_snap/utilities/boundingbox.dart';
 
 class IdentifierPage extends StatefulWidget {
-  IdentifierPage({Key key}) : super(key: key);
+  final List<CameraDescription> cameras;
+  IdentifierPage({Key key, this.cameras}) : super(key: key);
 
   @override
   _IdentifierPageState createState() => new _IdentifierPageState();
@@ -17,57 +17,20 @@ class _IdentifierPageState extends State<IdentifierPage> {
   List<dynamic> _recognitions;
   int _imageHeight = 0;
   int _imageWidth = 0;
-  String _model = "";
-  List<CameraDescription> cameras;
+  String _model = "MobileNet";
 
-  Future<Null> camCheck() async {
-    WidgetsFlutterBinding.ensureInitialized();
-    try {
-      WidgetsFlutterBinding.ensureInitialized();
-      cameras = await availableCameras();
-    } on CameraException catch (e) {
-      print('Error: $e.code\nError Message: $e.message');
-    }
+  loadModel() async {
+    String res;
+    res = await Tflite.loadModel(
+      model: "assets/tflite/mobilenet.tflite",
+      labels: "assets/tflite/mobilenet.txt",
+    );
+    print(res);
   }
 
   @override
   void initState() {
     super.initState();
-    camCheck();
-  }
-
-  loadModel() async {
-    String res;
-    switch (_model) {
-      case yolo:
-        res = await Tflite.loadModel(
-          model: "assets/tflite/yolov2_tiny.tflite",
-          labels: "assets/tflite/yolov2_tiny.txt",
-        );
-        break;
-
-      case mobilenet:
-        res = await Tflite.loadModel(
-            model: "assets/tflite/mobilenet.tflite",
-            labels: "assets/tflite/mobilenet.txt");
-        break;
-
-      case posenet:
-        res = await Tflite.loadModel(model: "assets/tflite/posenet.tflite");
-        break;
-
-      default:
-        res = await Tflite.loadModel(
-            model: "assets/tflite/ssd_mobilenet.tflite",
-            labels: "assets/tflite/ssd_mobilenet.txt");
-    }
-    print(res);
-  }
-
-  onSelect(model) {
-    setState(() {
-      _model = model;
-    });
     loadModel();
   }
 
@@ -86,47 +49,23 @@ class _IdentifierPageState extends State<IdentifierPage> {
       appBar: AppBar(
         title: Text("Leaf Scanner"),
       ),
-      body: _model == ""
-          ? Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  RaisedButton(
-                    child: const Text(ssd),
-                    onPressed: () => onSelect(ssd),
-                  ),
-                  RaisedButton(
-                    child: const Text(yolo),
-                    onPressed: () => onSelect(yolo),
-                  ),
-                  RaisedButton(
-                    child: const Text(mobilenet),
-                    onPressed: () => onSelect(mobilenet),
-                  ),
-                  RaisedButton(
-                    child: const Text(posenet),
-                    onPressed: () => onSelect(posenet),
-                  ),
-                ],
-              ),
-            )
-          : Stack(
-              children: [
-                Camera(
-                  cameras,
-                  _model,
-                  setRecognitions,
-                ),
-                BndBox(
-                  _recognitions == null ? [] : _recognitions,
-                  math.max(_imageHeight, _imageWidth),
-                  math.min(_imageHeight, _imageWidth),
-                  screen.height,
-                  screen.width,
-                  _model,
-                ),
-              ],
-            ),
+      body: Stack(
+        children: [
+          Camera(
+            widget.cameras,
+            _model,
+            setRecognitions,
+          ),
+          BndBox(
+            _recognitions == null ? [] : _recognitions,
+            math.max(_imageHeight, _imageWidth),
+            math.min(_imageHeight, _imageWidth),
+            screen.height,
+            screen.width,
+            _model,
+          ),
+        ],
+      ),
     );
   }
 }
