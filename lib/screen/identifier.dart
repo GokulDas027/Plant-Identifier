@@ -10,7 +10,7 @@ class IdentifierPage extends StatefulWidget {
   IdentifierPage({Key key, this.cameras}) : super(key: key);
 
   @override
-  _IdentifierPageState createState() => new _IdentifierPageState();
+  _IdentifierPageState createState() => _IdentifierPageState();
 }
 
 class _IdentifierPageState extends State<IdentifierPage> {

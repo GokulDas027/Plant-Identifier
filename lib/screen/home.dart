@@ -1,7 +1,7 @@
+import 'identifier.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:folium_snap/screen/search.dart';
-import 'identifier.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key key, this.title}) : super(key: key);
