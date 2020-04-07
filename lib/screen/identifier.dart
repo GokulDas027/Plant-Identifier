@@ -22,8 +22,8 @@ class _IdentifierPageState extends State<IdentifierPage> {
   loadModel() async {
     String res;
     res = await Tflite.loadModel(
-      model: "assets/tflite/mobilenet.tflite",
-      labels: "assets/tflite/mobilenet.txt",
+      model: "assets/tflite/mobilenetv2_leaf1.tflite",
+      labels: "assets/tflite/mobilenetv2_leaf1.txt",
     );
     print(res);
   }
