@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:folium_snap/screen/plant_profile.dart';
 
 class PlantSearch extends StatefulWidget {
   PlantSearch({Key key}) : super(key: key);
@@ -44,12 +45,25 @@ class _PlantSearchState extends State<PlantSearch> {
                 itemCount: filterEntries.length,
                 itemBuilder: (BuildContext context, int index) {
                   return Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(15),
-                      child: Center(
-                        child: Text(
-                          '${filterEntries[index]}',
-                          style: TextStyle(fontSize: 20),
+                    child: FlatButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => PlantProfile(
+                              title: filterEntries[index],
+                            ),
+                          ),
+                        );
+                      },
+                      splashColor: Colors.greenAccent,
+                      child: Padding(
+                        padding: const EdgeInsets.all(15),
+                        child: Center(
+                          child: Text(
+                            '${filterEntries[index]}',
+                            style: TextStyle(fontSize: 20),
+                          ),
                         ),
                       ),
                     ),

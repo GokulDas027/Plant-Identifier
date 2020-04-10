@@ -1,10 +1,10 @@
 import 'dart:math' as math;
-import 'package:camera/camera.dart';
 import 'package:tflite/tflite.dart';
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:folium_snap/utilities/camera.dart';
+import 'package:folium_snap/screen/plant_profile.dart';
 import 'package:folium_snap/utilities/boundingbox.dart';
-import 'home.dart';
 
 class IdentifierPage extends StatefulWidget {
   final List<CameraDescription> cameras;
@@ -62,7 +62,7 @@ class _IdentifierPageState extends State<IdentifierPage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => HomePage(
+                  builder: (context) => PlantProfile(
                     title: _recognitions[0]["label"],
                   ),
                 ),

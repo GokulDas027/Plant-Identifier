@@ -26,7 +26,7 @@ class BndBox extends StatelessWidget {
           // height: screenH,
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.grey[700].withOpacity(0.5),
+              color: Colors.grey.withOpacity(0.8),
               borderRadius: BorderRadius.all(Radius.circular(10)),
             ),
             padding: EdgeInsets.all(20),
@@ -36,7 +36,7 @@ class BndBox extends StatelessWidget {
                 Text(
                   "${re["label"]}",
                   style: TextStyle(
-                    color: Colors.green,
+                    color: Colors.green[900],
                     fontSize: 35.0,
                     fontWeight: FontWeight.bold,
                   ),
@@ -44,7 +44,7 @@ class BndBox extends StatelessWidget {
                 Text(
                   "${(re["confidence"] * 100).toStringAsFixed(0)}%",
                   style: TextStyle(
-                    color: Colors.green,
+                    color: Colors.green[800],
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold,
                   ),
