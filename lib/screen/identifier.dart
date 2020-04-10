@@ -4,6 +4,7 @@ import 'package:tflite/tflite.dart';
 import 'package:flutter/material.dart';
 import 'package:folium_snap/utilities/camera.dart';
 import 'package:folium_snap/utilities/boundingbox.dart';
+import 'home.dart';
 
 class IdentifierPage extends StatefulWidget {
   final List<CameraDescription> cameras;
@@ -56,13 +57,25 @@ class _IdentifierPageState extends State<IdentifierPage> {
             _model,
             setRecognitions,
           ),
-          BndBox(
-            _recognitions == null ? [] : _recognitions,
-            math.max(_imageHeight, _imageWidth),
-            math.min(_imageHeight, _imageWidth),
-            screen.height,
-            screen.width,
-            _model,
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => HomePage(
+                    title: _recognitions[0]["label"],
+                  ),
+                ),
+              );
+            },
+            child: BndBox(
+              _recognitions == null ? [] : [_recognitions[0]],
+              math.max(_imageHeight, _imageWidth),
+              math.min(_imageHeight, _imageWidth),
+              screen.height,
+              screen.width,
+              _model,
+            ),
           ),
         ],
       ),
