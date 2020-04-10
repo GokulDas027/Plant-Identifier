@@ -26,7 +26,7 @@ class _PlantSearchState extends State<PlantSearch> {
           children: <Widget>[
             TextField(
               decoration: InputDecoration(
-                contentPadding: EdgeInsets.all(15.0),
+                contentPadding: EdgeInsets.all(20),
                 hintText: "Hii, How're you feeling?",
               ),
               onChanged: (string) {
@@ -40,7 +40,7 @@ class _PlantSearchState extends State<PlantSearch> {
             ),
             Expanded(
               child: ListView.builder(
-                padding: const EdgeInsets.all(8),
+                padding: const EdgeInsets.all(10),
                 itemCount: filterEntries.length,
                 itemBuilder: (BuildContext context, int index) {
                   return Card(
