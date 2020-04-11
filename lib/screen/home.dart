@@ -26,6 +26,18 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
+        actions: <Widget>[
+          IconButton(
+            icon: ClipRRect(
+              borderRadius: BorderRadius.circular(50),
+              child: Image.asset("assets/images/launcher_icon.png"),
+            ),
+            onPressed: () {
+
+            },
+          ),
+          SizedBox(width: 10),
+        ],
       ),
       body: SafeArea(
         child: Center(
