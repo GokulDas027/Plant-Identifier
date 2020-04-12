@@ -14,20 +14,42 @@ class BndBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Widget> _renderStrings() {
-      double offset = -10;
+      double offset;
       return results.map((re) {
-        offset = offset + 500;
+        offset = 460;
         return Positioned(
-          left: 30,
+          left: 10,
           top: offset,
-          width: screenW,
-          height: screenH,
-          child: Text(
-            "${re["label"]} ${(re["confidence"] * 100).toStringAsFixed(0)}%",
-            style: TextStyle(
-              color: Color.fromRGBO(37, 213, 253, 1.0),
-              fontSize: 35.0,
-              fontWeight: FontWeight.bold,
+          bottom: 20,
+          right: 10,
+          // width: screenW,
+          // height: screenH,
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.grey.withOpacity(0.8),
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+            ),
+            padding: EdgeInsets.all(20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Text(
+                  "${re["label"]}",
+                  style: TextStyle(
+                    color: Colors.green[900],
+                    fontSize: 35.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  "${(re["confidence"] * 100).toStringAsFixed(0)}%",
+                  style: TextStyle(
+                    color: Colors.green[800],
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
             ),
           ),
         );

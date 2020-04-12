@@ -1,7 +1,7 @@
+import 'identifier.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:folium_snap/screen/search.dart';
-import 'identifier.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key key, this.title}) : super(key: key);
@@ -26,6 +26,18 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
+        actions: <Widget>[
+          IconButton(
+            icon: ClipRRect(
+              borderRadius: BorderRadius.circular(50),
+              child: Image.asset("assets/images/launcher_icon.png"),
+            ),
+            onPressed: () {
+
+            },
+          ),
+          SizedBox(width: 10),
+        ],
       ),
       body: SafeArea(
         child: Center(
