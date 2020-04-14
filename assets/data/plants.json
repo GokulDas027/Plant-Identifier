@@ -1,0 +1,284 @@
+{
+	"plants":[
+		{
+			"id": "1",
+			"name": "Koovalam",
+			"sci_name": "Aegle Marmelos",
+			"point1": "Roots with anti inflammatory & pain relieving property.",
+			"point2": "Bael juice daily cures diabetes, cholera , diarrhea, infections, jaundice.",
+			"point3": "Its juice along with salt & pepper can cure constipation.",
+			"point4": "leaves are used for lowering blood pressure, Affect in pregnancy, hypertension",
+			"link": "https://www.gyanunlimited.com/health/10-wonder-benefits-and-uses-of-bael-aegle-marmelos/11321/"
+		},
+		{
+			"id": "2",
+			"name": "Kandakari Chunda",
+			"sci_name": "Solanum Xanthocarpum",
+			"point1": "Herbal paste relieves from swelling of joint & arthritis.",
+			"point2": "Roots & seeds as expectorant in Asthma, cough & chest pain.",
+			"point3": "Root paste with lemon can cure snake & scorpion bites.",
+			"point4": "Seeds helpful for irregular menstruation Nasal treatment benefit for migraine & headache",
+			"link": "https://www.1mg.com/ayurveda/kantakari-178"
+		},
+		{
+			"id": "3",
+			"name": "Cheruchunda",
+			"sci_name": "Solanum chindionm",
+			"point1": "Leaves are the rich source of calcium, iron, phosphorus, carbohydrates, fat, crude fibre and minerals.",
+			"point2": "Fruit with honey & ghee reduce vomiting.",
+			"point3": "Decoction  of root & leaves with honey cures cough.",
+			"point4": "juice with vinegar can be used for mouthwash.",
+			"link": "https://healthyliving.natureloc.com/putharichunda-cure-respiratory-disorders/"
+		},
+		{
+			"id": "4",
+			"name": "Kumbil",
+			"sci_name": "Gmelina Arborea",
+			"point1": "Paste is best for headache & Flowers have its use in Leprosy Natural anti aging agent",
+			"point2": "Consuming decoction with root reduces diarrhoea, piles.",
+			"point3": "It also helps from snake bite & Root powder in warm water helps in Galactagogue",
+			"point4": "Extract the leaf juice to wash the ulcers.",
+			"link": "https://www.planetayurveda.com/library/gambhari-gmelina-arborea/"
+		},
+		{
+			"id": "5",
+			"name": "Orila",
+			"sci_name": "Desmodium gangeticum",
+			"point1": "Febrifuge, aphrodisiac, analgesic, diuretic,  anti inflammatory, and haemorrhagic properties.",
+			"point2": "Herb that protects the body from diseases and also helps to boost up the immune system.",
+			"point3": "This herb also acts as a laxative ,thus helps in easy passing of stools.",
+			"point4": "Quite effective in the treatment of piles.",
+			"link": "http://tropical.theferns.info/viewtropical.php?id=Desmodium+gangeticum"
+		},
+		{
+			"id": "6",
+			"name": "Moovila",
+			"sci_name": "Pseudarthria Viscida",
+			"point1": "Antidiabetic herbs control sugar level in people with diabetes mellitus.",
+			"point2": "Antidiarrheal herbs prevent or treat diarrhea & Antipyretic herbs reduce body fever.",
+			"point3": "Used in treatment of asthma,bronchitis etc...",
+			"point4": "Rejuvenative helps delay the delaying process.",
+			"link": "https://siddham.in/pseudarthria-viscida-herbal-remedy-for-rheumatic-ailments"
+		},
+		{
+			"id": "7",
+			"name": "Paathiri",
+			"sci_name": "Stereospermum Suaveolens",
+			"point1": "Has therapeutic properties like diuretic,cardiac tonic,anti-inflammatory.",
+			"point2": "Helps in easy urination and maintains proper urine flow.",
+			"point3": "Provides relief in burning sensation & helps in maintaining good heart health.",
+			"point4": "Effective in the treatment of piles & helps to remove toxins from blood and purifies it.",
+			"link": "https://www.planetayurveda.com/library/patala-stereospermum-suaveolens/"
+		},
+		{
+			"id": "8",
+			"name": "Palakapayyani",
+			"sci_name": "Oroxylum Indicum",
+			"point1": "Leaves are directly applied hot on the skin to treat an enlarged spleen.",
+			"point2": "The decoction of its root is useful against diarrhea and dysentery.",
+			"point3": "Roots have beneficial effects in cough,cold and fever.",
+			"point4": "Fruit is very good for skin,cleansing the wounds & even beneficial for heart problems.",
+			"link": "https://vikaspedia.in/agriculture/crop-production/package-of-practices/medicinal-and-aromatic-plants/oroxylum-indicum"
+		},
+		{
+			"id": "9",
+			"name": "Munja",
+			"sci_name": "Premna serratifolia",
+			"point1": "The decoction of root bark can be used in Rheumatoid Arthritis conditions.",
+			"point2": "The tender leaf juice mix with 'tulsi' is good for pediatric complaints like fever, indigestion,loose bowels.",
+			"point3": "Can treat indigestion, kapha disorders, nerve pain, and fever.",
+			"point4": "One of the DASHAMOOLA plant",
+			"link": "http://www.medicinalplantsindia.com/munja-headache-tree.html"
+		},
+		{
+			"id": "10",
+			"name": "Kurumulak",
+			"sci_name": "Piper nigrum",
+			"point1": "Antiseptic remedy in tooth decay & gum swellings & antibacterial property helps fight against infections and insect bites.",
+			"point2": "Antitumor activity for a few types of cancer.",
+			"point3": "Black pepper with ayurvedic tea is recommended for weight loss.",
+			"point4": "Soups made with black pepper can treat colds and coughs.",
+			"link": "https://www.organicfacts.net/health-benefits/herbs-and-spices/health-benefits-of-black-pepper.html"
+		},
+		{
+			"id": "11",
+			"name": "Cardamom",
+			"sci_name": "Elettaria cardamomum",
+			"point1": "Antioxidant & diuretic property lower blood pressure & oral intake of Greater cardamom oil is useful for asthma",
+			"point2": "Contain cancer fighting compounds & chewing seeds can treat bad breath & cavities.",
+			"point3": "For vomiting, indigestion, loss of appetite etc, powder of the seeds is given with honey three times a day.",
+			"point4": "For Urinary obstruction, seed powder with tender coconut water twice to thrice a day.",
+			"link": "https://www.bimbima.com/ayurveda/greater-cardamom-benefits-and-medicinal-uses/359/"
+		},
+		{
+			"id": "12",
+			"name": "Pera/ Guava",
+			"sci_name": "Psidium guajava",
+			"point1": "Fruit is good for skin & decoction of leaves  relieves from cough & cold.",
+			"point2": "Disinfects the respiratory tract, throat & lungs.",
+			"point3": "Bark is antifungal, anti-bacterial, antiseptic, astringent thus helps with acne.",
+			"point4": "Fruit has Folic acid, or Vitamin B-9, which is good for pregnant mothers. ",
+			"link": "https://www.researchgate.net/post/What_are_the_health_benefits_of_Guava"
+		},
+		{
+			"id": "13",
+			"name": "Irumban puli",
+			"sci_name": "Averrhoa bilimbi",
+			"point1": "Fruit can treat cough, diabetes, blood pressure.",
+			"point2": "Leaves paste can cure itches, swelling, rheumatism, mumps.",
+			"point3": "Leaf infusion is used as an after birth tonic.",
+			"point4": "Flower infusion used for thrush, cough & cold & used in folk medicine to control obesity.",
+			"link": "https://www.healthbenefitstimes.com/bilimbi/"
+		},
+		{
+			"id": "14",
+			"name": "Tea plant",
+			"sci_name": "Camellia sinensis",
+			"point1": "Tea helps in weight loss.",
+			"point2": "Protect bones effective in herbal treatment for rheumatoid arthritis, infection and impaired immune function.",
+			"point3": "Tea can naturally lower total cholesterol levels reducing risk of heart attack & stroke.",
+			"point4": "Boosts metabolism & when used for aromatherapy, tea oil can increase energy.",
+			"link": "https://www.herbazest.com/herbs/tea-plant"
+		},
+		{
+			"id": "15",
+			"name": "Samudrapacha",
+			"sci_name": "Argyreia Nervosa",
+			"point1": "Serves as tonic for nervous system.",
+			"point2": "Can stop bleeding from wounds.",
+			"point3": "Good herbal medicine to enhance brain functionality & effective for anxiety & rheumatism.",
+			"point4": "Solves urination problem & can cure allergies",
+			"link": "https://herbpathy.com/Uses-and-Benefits-of-Argyreia-Nervosa-Cid3765"
+		},
+		{
+			"id": "16",
+			"name": "Vathamkolli",
+			"sci_name": "Justicia gendarussa",
+			"point1": "Used for headache, cough, bronchitis, fever, fractured bones.",
+			"point2": "Used in birth control pill for men.",
+			"point3": "Can cure Rheumatoid arthritis & detoxifier hence detoxifies liver.",
+			"point4": "Prevents oedema & pressure effects of malignant growths of pancreas & brain.",
+			"link": "https://en.wikipedia.org/wiki/Justicia_gendarussa"
+		},
+		{
+			"id": "17",
+			"name": "Vashalacheera",
+			"sci_name": "Bassalla rubra",
+			"point1": "Pulped leaves with boil water can cure pimples & ulcers & sugared juice is useful for catarrhal afflictions.",
+			"point2": "Leaf juice with butter helps in cooling & soothing to burns & is demulcent thus used for dysentry.",
+			"point3": "Seeds are used as abortifacient & roots & leaves removes placenta, membranes after birth.",
+			"point4": "Leaves & stem used as an anti cancer agents.",
+			"link": "https://ayushvedah.com/druginfo.php?drugid=523"
+		},
+		{
+			"id": "18",
+			"name": "Thazhuthama/ Punarnava ",
+			"sci_name": "Boerhavia diffusa",
+			"point1": "Diuretic in nature & acts as a slight laxative which prevents constipation & purify blood.",
+			"point2": "Improves health of heart & white punarnava cures eye disorders.",
+			"point3": "Cures amavata & inflammations.",
+			"point4": "Rich in potassium nitrate which causes less urination diseases.",
+			"link": "https://www.rhythmofnature.org/2012/11/thazhuthama-and-its-medicinal-values.html"
+		},
+		{
+			"id": "19",
+			"name": "Chembaruthi/ Hibiscus",
+			"sci_name": "Hibiscus rosasinensis",
+			"point1": "Manages blood pressure & rich in antioxidant hence reduces liver damage.",
+			"point2": "Relieves from menstrual pain.",
+			"point3": "Presence of protocatechuic acid slow down growth of cancer cells.",
+			"point4": "With tea it fight off depression & drinking hibiscus tea cause weight loss.",
+			"link": "https://www.webmd.com/vitamins/ai/ingredientmono-211/hibiscus"
+		},
+		{
+			"id": "20",
+			"name": "Muringha",
+			"sci_name": "Moringa oleifera",
+			"point1": "Seed oil can protect & nourishes hair & protect liver damage caused by anti-tuberculosis drugs.",
+			"point2": "Anti-inflammatory property prevents edema from developing.",
+			"point3": "Muringha extract prevent cancer cell development.",
+			"point4": "Protects against kidney disorders & makes bones healthier.",
+			"link": "https://www.webmd.com/vitamins/ai/ingredientmono-1242/moringa "
+		},
+		{
+			"id": "21",
+			"name": "Brahmi",
+			"sci_name": "Bacopa monnieri",
+			"point1": "Improves memory, anxiety, hyperactivity disorders & cures Alzheimer’s disease.",
+			"point2": "Its extracts for 5 months prevent seizures of epilepsy.",
+			"point3": "Helps to reduce ADHD (Attention deficit hyperactivity disorder) symptoms.",
+			"point4": "The powdered is added to hot water making a soothing tea to relieve from stress.",
+			"link": "https://www.webmd.com/vitamins/ai/ingredientmono-761/bacopa"
+		},
+		{
+			"id": "22",
+			"name": "Arya veppu/ Neem",
+			"sci_name": "Azadirachta Indica",
+			"point1": "Used as an insecticide & stem, root, bark can be used in tonic & astringent.",
+			"point2": "Seed oil are used for leprosy & intestinal worms.",
+			"point3": "Bark is used for malaria, stomach ulcer, skin disease.",
+			"point4": "Due to its antibacterial activity, it is an ingredient in toothpaste, mouthwash and oral health tonics.",
+			"link": "https://dinetable.com/health-benefits-of-neem-arya-veppu/"
+		},
+		{
+			"id": "23",
+			"name": "Aloe Vera",
+			"sci_name": "Aloe Barbadensis",
+			"point1": "Its gel contains powerful antioxidants called polyphenols.",
+			"point2": "It reduces dental plaques & accelerates the healing of burns.",
+			"point3": "It reduces constipation & lowers blood sugar levels.",
+			"point4": "Aloe vera is good for hair growth.",
+			"link": "https://www.healthline.com/health/7-amazing-uses-aloe-vera"
+		},
+		{
+			"id": "24",
+			"name": "Adalodakam",
+			"sci_name": "Adhatoda Vasica",
+			"point1": "It cures respiratory disorders & treats local bleeding.",
+			"point2": "It removes the toxins in blood and purifies it.",
+			"point3": "Used to quick labour and promote easier childbirth.",
+			"point4": "A good bio-insect killer to kill bacteria.",
+			"link": "https://www.itoozhiayurveda.in/adalodakam-ayurvedic-herbs-for-cough/"
+		},
+		{
+			"id": "25",
+			"name": "Thulsi",
+			"sci_name": "Ocimum Sactum",
+			"point1": "It contains Vitamin C and antioxidants which protects the heart from the harmful effects of free radicals.",
+			"point2": "It protects the skin from all the damages.",
+			"point3": "Treats kidney stones & relieves headaches.",
+			"point4": "Fights acne & relieves fever.",
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4296439/"
+		},
+		{
+			"id": "26",
+			"name": "Ummam",
+			"sci_name": "Datura Stramonium",
+			"point1": "Leaves are good to relieve headaches. ",
+			"point2": "The vapour of the leaves are used to relieve arthritis.",
+			"point3": "The ethanol extract of leaves is used as repellent against larva and mosquitoes.",
+			"point4": "The leaves are used to treat heart problems & leaf juice is applied over the scalp to treat hair fall.",
+			"link": "http://www.keralaayurvedics.com/herbs-plants/ummam-datura-stramonium-ayurveda-medicinal-plants.html"
+		},
+		{
+			"id": "27",
+			"name": "Ashokavanam",
+			"sci_name": "Saraca Asoca",
+			"point1": "The bark is used to prepare cosmetics that help to improve skin complexion.",
+			"point2": "The seeds are used in the treatment of urinary discharges.",
+			"point3": "The alcoholic extracts of both the flowers have shown antimicrobial activities.",
+			"point4": "It is used to treat menorrhagia,internal bleeding etc.",
+			"link": "http://tropical.theferns.info/viewtropical.php?id=Saraca+asoca"
+		},
+		{
+			"id": "28",
+			"name": "Alpam",
+			"sci_name": "Thottea Siliquosa",
+			"point1": "The roots are used in the treatment of diarrhea and dysentery.",
+			"point2": "Paste prepared from the plant with oil is effective against chronic sores and ulcers.",
+			"point3": "The juice of this plant is taken internally for cough.",
+			"point4": "The stems and leaves are reported as diuretic.",
+			"link": "https://herbs.indianmedicinalplants.info/index.php/dr-ajayan-sadanandan-s-articles/1198-thottea-siliquosa-apama-siliquosa-chakrani"
+		}
+	]
+}
