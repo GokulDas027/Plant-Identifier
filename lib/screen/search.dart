@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:folium_snap/screen/plant_profile.dart';
+import 'package:folium_snap/models/disease_model.dart';
+// import 'package:folium_snap/screen/plant_profile.dart';
 
 class PlantSearch extends StatefulWidget {
   PlantSearch({Key key}) : super(key: key);
@@ -9,13 +10,13 @@ class PlantSearch extends StatefulWidget {
 }
 
 class _PlantSearchState extends State<PlantSearch> {
-  List<String> entries = <String>['AAAAA', 'BBBBB', 'CCCCC', 'DDDDD'];
-  List<String> filterEntries = List();
+  Future<List<Disease>> diseaseList = getDiseaseList();
+  Future<List<Disease>> filterDiseaseList;
 
   @override
   void initState() {
     super.initState();
-    filterEntries = entries;
+    filterDiseaseList = diseaseList;
   }
 
   @override
@@ -26,47 +27,45 @@ class _PlantSearchState extends State<PlantSearch> {
         child: Column(
           children: <Widget>[
             TextField(
+              textCapitalization: TextCapitalization.sentences,
               decoration: InputDecoration(
                 contentPadding: EdgeInsets.all(20),
                 hintText: "Hii, How're you feeling?",
               ),
-              onChanged: (string) {
-                setState(() {
-                  filterEntries = entries
-                      .where((u) =>
-                          (u.toLowerCase().contains(string.toLowerCase())))
-                      .toList();
-                });
-              },
+              // onChanged: (string) {
+              //   setState(() {
+              //     filterDiseaseList = diseaseList
+              //         .where((u) =>
+              //             (u.name.toLowerCase().contains(string.toLowerCase())))
+              //         .toList();
+              //   });
+              // },
             ),
             Expanded(
-              child: ListView.builder(
-                padding: const EdgeInsets.all(10),
-                itemCount: filterEntries.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return Card(
-                    child: FlatButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => PlantProfile(
-                              title: filterEntries[index],
-                            ),
-                          ),
-                        );
-                      },
-                      splashColor: Colors.greenAccent,
-                      child: Padding(
-                        padding: const EdgeInsets.all(15),
-                        child: Center(
-                          child: Text(
-                            '${filterEntries[index]}',
-                            style: TextStyle(fontSize: 20),
-                          ),
+              child: FutureBuilder(
+                future: filterDiseaseList,
+                builder: (context, snapshot) {
+                  var diseases = snapshot.data ?? [];
+                  print(diseases);
+                  return ListView.builder(
+                    padding: const EdgeInsets.all(12),
+                    itemCount: diseases.length,
+                    itemBuilder: (BuildContext context, int index) {
+                      Disease disease = diseases[index];
+                      return Container(
+                        padding: EdgeInsets.all(10),
+                        child: Column(
+                          children: <Widget>[
+                            Text(disease.name),
+                            Text(disease.point1),
+                            Text(disease.point2),
+                            Text(disease.point3),
+                            Text(disease.point4),
+                            Text(disease.point5),
+                          ],
                         ),
-                      ),
-                    ),
+                      );
+                    }
                   );
                 },
               ),
