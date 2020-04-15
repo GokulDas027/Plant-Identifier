@@ -1,6 +1,3 @@
-import 'dart:convert';
-import 'package:flutter/services.dart';
-
 class Disease {
   final String id;
   final String name;
@@ -28,13 +25,4 @@ class Disease {
         point4: json["point4"],
         point5: json["point5"],
       );
-}
-
-List<Disease> diseaseListFromJson(String str) {
-  final jsonData = json.decode(str)['diseases'];
-  return List<Disease>.from(jsonData.map((x) => Disease.fromJson(x)));
-}
-
-Future<List<Disease>> getDiseaseList() async{
-  return diseaseListFromJson(await rootBundle.loadString('assets/data/diseaseinfo.json'));
 }
