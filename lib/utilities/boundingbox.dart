@@ -14,12 +14,12 @@ class BndBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Widget> _renderStrings() {
-      double offset;
+      double boxHeight;
       return results.map((re) {
-        offset = 460;
+        boxHeight = 180.0;
         return Positioned(
           left: 10,
-          top: offset,
+          top: screenH-boxHeight,
           bottom: 20,
           right: 10,
           // width: screenW,

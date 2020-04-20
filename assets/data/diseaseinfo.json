@@ -1,0 +1,184 @@
+{
+	"diseases":[
+		{
+			"id": "1",
+			"name": "Fever",
+			"point1": "Leaves of Basil with 1tspoon of ginger & a drop of honey in tulsi water effectively bring down fever.",
+			"point2": "Crush 1 garlic clove & add to 1 cup hot water. Drink twice daily.",
+			"point3": "“Sweat it out” with peppermint oil, ginger oil, and cinnamon bark oil.",
+			"point4": "Take vapours of leaves panikoorkka, tulsi & kurumulak boiled with water.",
+			"point5": "Place a cotton cloth soaked in hot water on forehead."
+		},
+		{
+			"id": "2",
+			"name": "Cold",
+			"point1": "Juice of ginger & basil with honey 3 times a day.",
+			"point2": "Eat small balls of black pepper powder mixed with jaggery 2 times a day.",
+			"point3": "Tulsi leaves mixed with dried ginger powder is substituted with tea.",
+			"point4": "Take small capsule size made with powdered sugar candy/kalkandam & kurumulak.",
+			"point5": "Consume grinded nellika in honey."
+		},
+		{
+			"id": "3",
+			"name": "Headache",
+			"point1": "Rub warm coconut oil on the feet soles & scalp.",
+			"point2": "2 tbspoon of aloe vera with warm ghee in each nostril at bedtime.",
+			"point3": "Chew a fresh piece of ginger.",
+			"point4": "Apply karpura tulsi oil on scalp.",
+			"point5": "Drink hot water soaked with some coriander/ malli seeds."
+		},
+		{
+			"id": "4",
+			"name": "Stomach ache",
+			"point1": "Incorporate spices like turmeric, cumin, fennel, coriander, hing in diet.",
+			"point2": "Drink ginger/ cumin tea once a day.",
+			"point3": "Consume1 tspoon of juice of ginger in ½ tspoon butter.",
+			"point4": "Drink aloe vera juice daily in empty stomach.",
+			"point5": "Chew some mint leaves."
+		},
+		{
+			"id": "5",
+			"name": "Dandruff",
+			"point1": "Apply thick aloe vera gel on the scalp.",
+			"point2": "Apply mixture of warm coconut oil with lemon.",
+			"point3": "Tulsi, vettila & chembaruthi extract in oil clear dandruff.",
+			"point4": "A paste of amla powder, tulsi leaves works immediately.",
+			"point5": "Soak uluva/ fenugreek in water & apply the grinded paste to scalp."
+		},
+		{
+			"id": "6",
+			"name": "Pimples",
+			"point1": "Apply crushed tulsi leaf on the pimple daily.",
+			"point2": "Apply neem/ aryavepp on it.",
+			"point3": "Apply few drops of honey on pimple or its scars.",
+			"point4": "Make a paste of amla & apply on face.",
+			"point5": "Apply  paste of turmeric mixed with water."
+		},
+		{
+			"id": "7",
+			"name": "Sore throat",
+			"point1": "Drink boiled water with tulsi leaves.",
+			"point2": "Add a spoon of honey & lemon juice to warm water & drink it.",
+			"point3": "Soak ¼ tspoon of triphala powder in water overnight & drink it in the morning.",
+			"point4": "Chew garlic clove,",
+			"point5": "Boiled water with Mylanji leaf can be used to gargle."
+		},
+		{
+			"id": "8",
+			"name": "Acidity",
+			"point1": "Chew a slice of fresh ginger.",
+			"point2": "Drink boiled milk with garlic at bedtime.",
+			"point3": "Add 1/2 tspoon of cinnamon powder to water and boil. Once it steeps, consume it three times a day.",
+			"point4": "Chew 2 or 3 cloves thoroughly letting the juices release into your digestive tract.",
+			"point5": "Roast and crush a few cumin seeds and mix in a glass of water & drink it."
+		},
+		{
+			"id": "9",
+			"name": "Asthma",
+			"point1": "½ tspoon of bay leaf & ¼ tspoon of pippali mixed with honey during 2 or 3 times daily.",
+			"point2": "Add ginger & turmeric to milk, boil it & drink.",
+			"point3": "Ginger tea mixed with 2,3 crushed garlic cloves helps a lot.",
+			"point4": "Consume grinded adalodakam leaf in goat milk.",
+			"point5": "Drink jeera kashayam"
+		},
+		{
+			"id": "10",
+			"name": "Constipation",
+			"point1": "Drink tea with lemon juice mixed in it.",
+			"point2": "Half cup of bael fruit & 1tspoon jaggery every morning.",
+			"point3": "Consume a mixture of take ¼ tspoon of triphala, ½ tspoon coriander seeds & ¼ tspoon cardamom.",
+			"point4": "Boil uluva/ coriander leaf with a piece of white onion & consume it.",
+			"point5": "Add paste of garlic into cold milk & drink at bedtime."
+		},
+		{
+			"id": "11",
+			"name": "Toothache",
+			"point1": "Place a sliced onion on the tooth for 5 minutes & remove it.",
+			"point2": "Press the hot tea bag on the side of tooth.",
+			"point3": "Apply clove oil on the tooth",
+			"point4": "Drink karpuratulsi tea",
+			"point5": "Place some ginger paste over the teeth"
+		},
+		{
+			"id": "12",
+			"name": "Peroid cramps",
+			"point1": "Massage abdomen with sesame oil for 20 minutes",
+			"point2": "Drink ginger & black pepper tea",
+			"point3": "When your period starts, take 30 mg of fennel extract four times a day for three days.",
+			"point4": "Sip two cups of tea per day a week before your period.",
+			"point5": "Take 840 mg of cinnamon capsules three times a day during the first three days of your period."
+		},
+		{
+			"id": "13",
+			"name": "Arthritis pain",
+			"point1": "Shallaki is known to keep your joints strong & relive from any pain.",
+			"point2": "Massage eucalyptus oil over the painful joints.",
+			"point3": "Ginger will reduce the pain & swelling",
+			"point4": "Consume Dashamoola arishtam",
+			"point5": "Nirgundi is also used for swelling & pain."
+		},
+		{
+			"id": "14",
+			"name": "Sneezing",
+			"point1": "Chew black cardamom 2,3 times a day.",
+			"point2": "Mix sliced ginger with honey & boil these in water & sip it daily.",
+			"point3": "Drink boiled tulsi water 2,3 times before bedtime.",
+			"point4": "Mix of Sitophaladi churna with honey & have it before bedtime",
+			"point5": "Consume Amla churnam"
+		},
+		{
+			"id": "15",
+			"name": "Sleeplessness",
+			"point1": "Drink Brahmi kashayam which gives concentration",
+			"point2": "Shankhupushpam acts as a natural tranquilizer for anxiety neurosis.",
+			"point3": "Consume Aswagandha rasayanam to promote sound sleep.",
+			"point4": "Jatamasis is a natural brain tonic that give calmness",
+			"point5": "Drink a warm glass of milk infused with 10 strands of saffron to induce sleep."
+		},
+		{
+			"id": "16",
+			"name": "Diabetes",
+			"point1": "Amla helps to absorb insulin & regulate blood sugar level.",
+			"point2": "Triphala also boost immunity",
+			"point3": "Drink ginger tea",
+			"point4": "Consume cinnamon poder mixed with honey",
+			"point5": "Consume fibre containing fruits"
+		},
+		{
+			"id": "17",
+			"name": "Malaria",
+			"point1": "Powdered grape seed, white grass, green tea are made into capsule & consumed.",
+			"point2": "Digestion support formulation is prepared from potent herb.",
+			"point3": "Natural brahmi extract is also used",
+			"point4": "Belgiri powder prepared from Bael fruit is also used",
+			"point5": "Giloy capsules are excellent natural remedy"
+		},
+		{
+			"id": "18",
+			"name": "Hairloss",
+			"point1": "Use muringha oil to massage the scalp.",
+			"point2": "Apply Hibiscus flower extract on to the scalp.",
+			"point3": "Apply Amla paste over the scalp",
+			"point4": "Massage with coconut oil seasoned with curry leaves, kurumulak, karinjeerakam, bhringa.",
+			"point5": "Appply aloe vera extract on the scalp & massage for 10 minutes"
+		},
+		{
+			"id": "19",
+			"name": "Urinary Infection",
+			"point1": "Eat more Cranberries",
+			"point2": "Combination of uvaursi leaf & dandelion root",
+			"point3": "Chew garlic slices",
+			"point4": "Drink unsweetened Cranberri extract ",
+			"point5": "Drink aloe vera juice 2 times a day"
+		},
+		{
+			"id": "20",
+			"name": "Sinusitis",
+			"point1": "Boil water with basil, mint leaves, cloves & ginger & drink the water.",
+			"point2": "Have ginger juice with honey daily 2 times.",
+			"point3": "Consume ginger tulsi juice in empty stomach.",
+			"point4": "Apply paste of dry ginger, turmeric powder & ambehalad over sinusitis area.",
+			"point5": "Apply karinjeerakam kizhi over the nose."
+		}
+	]
+}
