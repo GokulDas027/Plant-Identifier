@@ -53,27 +53,38 @@ class _PlantSearchState extends State<PlantSearch> {
                       .where((u) =>
                           (u.name.toLowerCase().contains(string.toLowerCase())))
                       .toList();
-                  print(filterDiseaseList);
                 });
               },
             ),
             Expanded(
               child: ListView.builder(
-                padding: const EdgeInsets.all(12),
                 itemCount: filterDiseaseList.length,
                 itemBuilder: (BuildContext context, int index) {
                   Disease disease = filterDiseaseList[index];
-                  return Container(
-                    padding: EdgeInsets.all(10),
-                    child: Column(
-                      children: <Widget>[
-                        Text(disease.name),
-                        Text(disease.point1),
-                        Text(disease.point2),
-                        Text(disease.point3),
-                        Text(disease.point4),
-                        Text(disease.point5),
-                      ],
+                  return Card(
+                    child: Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical:8.0),
+                            child: Text(
+                              disease.name,
+                              style: TextStyle(
+                                fontSize: 25,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          pointText(disease.point1),
+                          pointText(disease.point2),
+                          pointText(disease.point3),
+                          pointText(disease.point4),
+                          pointText(disease.point5),
+                        ],
+                      ),
                     ),
                   );
                 },
@@ -84,4 +95,16 @@ class _PlantSearchState extends State<PlantSearch> {
       ),
     );
   }
+}
+
+Widget pointText(String text) {
+  return Padding(
+    padding: const EdgeInsets.all(5.0),
+    child: Text(
+      "* $text",
+      style: TextStyle(
+        fontSize: 18,
+      ),
+    ),
+  );
 }
