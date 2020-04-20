@@ -1,8 +1,9 @@
 import 'dart:math' as math;
-import 'package:camera/camera.dart';
 import 'package:tflite/tflite.dart';
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:folium_snap/utilities/camera.dart';
+import 'package:folium_snap/screen/plant_profile.dart';
 import 'package:folium_snap/utilities/boundingbox.dart';
 
 class IdentifierPage extends StatefulWidget {
@@ -22,8 +23,8 @@ class _IdentifierPageState extends State<IdentifierPage> {
   loadModel() async {
     String res;
     res = await Tflite.loadModel(
-      model: "assets/tflite/mobilenet.tflite",
-      labels: "assets/tflite/mobilenet.txt",
+      model: "assets/tflite/mobilenetv2_leaf1.tflite",
+      labels: "assets/tflite/mobilenetv2_leaf1.txt",
     );
     print(res);
   }
@@ -56,13 +57,25 @@ class _IdentifierPageState extends State<IdentifierPage> {
             _model,
             setRecognitions,
           ),
-          BndBox(
-            _recognitions == null ? [] : _recognitions,
-            math.max(_imageHeight, _imageWidth),
-            math.min(_imageHeight, _imageWidth),
-            screen.height,
-            screen.width,
-            _model,
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => PlantProfile(
+                    title: _recognitions[0]["label"],
+                  ),
+                ),
+              );
+            },
+            child: BndBox(
+              _recognitions == null ? [] : [_recognitions[0]],
+              math.max(_imageHeight, _imageWidth),
+              math.min(_imageHeight, _imageWidth),
+              screen.height,
+              screen.width,
+              _model,
+            ),
           ),
         ],
       ),
