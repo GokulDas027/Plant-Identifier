@@ -39,7 +39,7 @@ class _PlantProfileState extends State<PlantProfile> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("Plant Details"),
       ),
       body: Column(
         children: <Widget>[
@@ -52,12 +52,22 @@ class _PlantProfileState extends State<PlantProfile> {
                 return Container(
                   padding: EdgeInsets.all(10),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Text(plant.name),
-                      Text(plant.point1),
-                      Text(plant.point2),
-                      Text(plant.point3),
-                      Text(plant.point4),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical:8.0),
+                        child: Text(
+                          plant.name,
+                          style: TextStyle(
+                            fontSize: 40,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      pointText(plant.point1),
+                      pointText(plant.point2),
+                      pointText(plant.point3),
+                      pointText(plant.point4),
                     ],
                   ),
                 );
@@ -68,4 +78,17 @@ class _PlantProfileState extends State<PlantProfile> {
       ),
     );
   }
+}
+
+Widget pointText(String text) {
+  return Padding(
+    padding: const EdgeInsets.all(8.0),
+    child: Text(
+      "$text",
+      style: TextStyle(
+        fontSize: 25,
+        color: Colors.black54,
+      ),
+    ),
+  );
 }
