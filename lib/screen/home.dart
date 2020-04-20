@@ -2,6 +2,7 @@ import 'identifier.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:folium_snap/screen/search.dart';
+import 'package:folium_snap/screen/about_us.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key key, this.title}) : super(key: key);
@@ -28,12 +29,14 @@ class HomePage extends StatelessWidget {
         title: Text(title),
         actions: <Widget>[
           IconButton(
-            icon: ClipRRect(
-              borderRadius: BorderRadius.circular(50),
-              child: Image.asset("assets/images/launcher_icon.png"),
-            ),
+            icon: Image.asset("assets/images/launcher_icon.png"),
             onPressed: () {
-
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => AboutUs(),
+                ),
+              );
             },
           ),
           SizedBox(width: 10),
