@@ -1,7 +1,6 @@
 import 'identifier.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:folium_snap/screen/search.dart';
 import 'package:folium_snap/screen/about_us.dart';
 
@@ -40,9 +39,10 @@ class HomePage extends StatelessWidget {
                   begin: Alignment.topRight,
                   end: Alignment.bottomLeft,
                   colors: [
+                    Colors.green[600],
+                    Colors.green[300],
+                    // Theme.of(context).primaryColor,
                     // Theme.of(context).primaryColorLight,
-                    Theme.of(context).accentColor,
-                    Theme.of(context).primaryColorDark,
                   ],
                 ),
               ),
@@ -50,13 +50,9 @@ class HomePage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Image.asset("assets/images/launcher_icon.png"),
-                    Text(
-                      "Folium Snap",
-                      style: GoogleFonts.pacifico(
-                        fontSize: 30,
-                        // color: Theme.of(context).primaryColorLight,
-                      ),
+                    Image.asset(
+                      "assets/images/launcher_icon.png",
+                      scale: 0.8,
                     ),
                     SizedBox(height: 25),
                   ],
@@ -74,7 +70,7 @@ class HomePage extends StatelessWidget {
           ),
           Container(
             width: double.infinity,
-            height: 100,
+            height: 120,
             margin: EdgeInsets.symmetric(horizontal: 25, vertical: 15),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
@@ -83,7 +79,7 @@ class HomePage extends StatelessWidget {
                 BoxShadow(
                   offset: Offset(0, 8),
                   blurRadius: 24,
-                  color: Colors.grey[200],
+                  color: Colors.grey[300],
                 ),
               ],
             ),
@@ -99,7 +95,7 @@ class HomePage extends StatelessWidget {
                 );
               },
               splashColor: Theme.of(context).accentColor,
-              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -107,14 +103,26 @@ class HomePage extends StatelessWidget {
                   Icon(
                     Icons.camera_alt,
                     size: 70,
-                    color: Theme.of(context).primaryColorDark,
+                    color: Theme.of(context).primaryColor,
                   ),
-                  Text(
-                    '  Scan the Leaf  ',
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: Theme.of(context).primaryColorDark,
-                    ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'Scan the Leaf  ',
+                        style: TextStyle(
+                          fontSize: 30,
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ),
+                      Text(
+                        '  Ensure lighting & alignment',
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: Theme.of(context).primaryColorLight,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -122,8 +130,8 @@ class HomePage extends StatelessWidget {
           ),
           Container(
             width: double.infinity,
-            height: 100,
-            margin: EdgeInsets.symmetric(horizontal: 25, vertical: 15),
+            height: 120,
+            margin: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color: Colors.white,
@@ -131,7 +139,7 @@ class HomePage extends StatelessWidget {
                 BoxShadow(
                   offset: Offset(0, 8),
                   blurRadius: 24,
-                  color: Colors.grey[200],
+                  color: Colors.grey[300],
                 ),
               ],
             ),
@@ -143,7 +151,7 @@ class HomePage extends StatelessWidget {
                 );
               },
               splashColor: Theme.of(context).accentColor,
-              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -151,20 +159,32 @@ class HomePage extends StatelessWidget {
                   Icon(
                     Icons.search,
                     size: 70,
-                    color: Theme.of(context).primaryColorDark,
+                    color: Theme.of(context).primaryColor,
                   ),
-                  Text(
-                    ' Search for Cure ',
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: Theme.of(context).primaryColorDark,
-                    ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        '  Search for Cure ',
+                        style: TextStyle(
+                          fontSize: 30,
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ),
+                      Text(
+                        '   Search for the disease',
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: Theme.of(context).primaryColorLight,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
             ),
           ),
-          SizedBox(height: 20)
         ],
       ),
     );
