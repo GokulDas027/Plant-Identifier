@@ -59,7 +59,7 @@ class _IdentifierPageState extends State<IdentifierPage> {
           ),
           GestureDetector(
             onTap: () {
-              Navigator.push(
+              Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
                   builder: (context) => PlantProfile(
