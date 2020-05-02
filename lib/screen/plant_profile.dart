@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:folium_snap/models/plant_model.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class PlantProfile extends StatefulWidget {
   final String title;
@@ -55,7 +56,7 @@ class _PlantProfileState extends State<PlantProfile> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Padding(
-                        padding: const EdgeInsets.symmetric(vertical:8.0),
+                        padding: const EdgeInsets.symmetric(vertical: 8.0),
                         child: Text(
                           plant.name,
                           style: TextStyle(
@@ -68,6 +69,19 @@ class _PlantProfileState extends State<PlantProfile> {
                       pointText(plant.point2),
                       pointText(plant.point3),
                       pointText(plant.point4),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          FlatButton(
+                            child: Text("Know more..",
+                            style: TextStyle(
+                              fontSize:20,
+                              color: Colors.blue[300],
+                            ),),
+                            onPressed: () => _launchURL(plant.link),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 );
@@ -91,4 +105,13 @@ Widget pointText(String text) {
       ),
     ),
   );
+}
+
+_launchURL(String url) async {
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+  print("clicked");
 }
