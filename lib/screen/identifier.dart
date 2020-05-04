@@ -19,6 +19,7 @@ class _IdentifierPageState extends State<IdentifierPage> {
   int _imageHeight = 0;
   int _imageWidth = 0;
   String _model = "MobileNet";
+  bool _visible = true;
 
   loadModel() async {
     String res;
@@ -46,6 +47,14 @@ class _IdentifierPageState extends State<IdentifierPage> {
   @override
   Widget build(BuildContext context) {
     Size screen = MediaQuery.of(context).size;
+
+    void _toggle() {
+      setState(() {
+        _visible = !_visible;
+        print(_visible);
+      });
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Leaf Scanner"),
@@ -58,13 +67,25 @@ class _IdentifierPageState extends State<IdentifierPage> {
             setRecognitions,
           ),
           Positioned(
-            top: 15,
-            left: 15,
-            child: Text(
-              "Ensure proper lighting",
-              style: TextStyle(
-                color: Colors.white70,
-                fontSize: 15,
+            top: 10,
+            right: 10,
+            child: Visibility(
+              visible: _visible,
+              child: FlatButton(
+                onPressed: () => _toggle(),
+                child: Row(
+                  children: <Widget>[
+                    Text(
+                      "Ensure proper lighting  ",
+                      style: TextStyle(
+                        color: Colors.white70,
+                        fontSize: 15,
+                      ),
+                    ),
+                    Icon(Icons.close,
+                    color: Colors.white70,),
+                  ],
+                ),
               ),
             ),
           ),
