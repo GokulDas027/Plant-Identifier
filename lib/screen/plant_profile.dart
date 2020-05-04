@@ -73,11 +73,13 @@ class _PlantProfileState extends State<PlantProfile> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: <Widget>[
                           FlatButton(
-                            child: Text("Know more..",
-                            style: TextStyle(
-                              fontSize:20,
-                              color: Colors.blue[300],
-                            ),),
+                            child: Text(
+                              "Know more..",
+                              style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.blue[300],
+                              ),
+                            ),
                             onPressed: () => _launchURL(plant.link),
                           ),
                         ],

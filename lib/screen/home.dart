@@ -24,6 +24,7 @@ class HomePage extends StatelessWidget {
     }
 
     camCheck();
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -32,7 +33,7 @@ class HomePage extends StatelessWidget {
           ClipPath(
             clipper: RoundClipper(),
             child: Container(
-              height: 450,
+              height: height/1.75,  //370,
               width: double.infinity,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
@@ -52,7 +53,7 @@ class HomePage extends StatelessWidget {
                   children: <Widget>[
                     Image.asset(
                       "assets/images/launcher_icon.png",
-                      scale: 0.8,
+                      scale: 1,
                     ),
                     SizedBox(height: 25),
                   ],
@@ -70,7 +71,7 @@ class HomePage extends StatelessWidget {
           ),
           Container(
             width: double.infinity,
-            height: 120,
+            height: 100,
             margin: EdgeInsets.symmetric(horizontal: 25, vertical: 15),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
@@ -102,7 +103,7 @@ class HomePage extends StatelessWidget {
                 children: <Widget>[
                   Icon(
                     Icons.camera_alt,
-                    size: 70,
+                    size: 60,
                     color: Theme.of(context).primaryColor,
                   ),
                   Column(
@@ -130,7 +131,7 @@ class HomePage extends StatelessWidget {
           ),
           Container(
             width: double.infinity,
-            height: 120,
+            height: 100,
             margin: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
@@ -158,7 +159,7 @@ class HomePage extends StatelessWidget {
                 children: <Widget>[
                   Icon(
                     Icons.search,
-                    size: 70,
+                    size: 60,
                     color: Theme.of(context).primaryColor,
                   ),
                   Column(
@@ -168,7 +169,7 @@ class HomePage extends StatelessWidget {
                       Text(
                         '  Search for Cure ',
                         style: TextStyle(
-                          fontSize: 30,
+                          fontSize: 29,
                           color: Theme.of(context).primaryColor,
                         ),
                       ),
