@@ -57,6 +57,17 @@ class _IdentifierPageState extends State<IdentifierPage> {
             _model,
             setRecognitions,
           ),
+          Positioned(
+            top: 15,
+            left: 15,
+            child: Text(
+              "Ensure proper lighting",
+              style: TextStyle(
+                color: Colors.white70,
+                fontSize: 15,
+              ),
+            ),
+          ),
           GestureDetector(
             onTap: () {
               Navigator.pushReplacement(

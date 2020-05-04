@@ -8,7 +8,13 @@ class AboutUs extends StatelessWidget {
         title: Text("About US"),
       ),
       body: Center(
-        child: Text("About US"),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Text("About US"),
+            Text("Need something to fill here.."),
+          ],
+        ),
       ),
     );
   }
