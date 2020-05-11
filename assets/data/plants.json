@@ -102,7 +102,7 @@
 		},
 		{
 			"id": "11",
-			"name": "Cardamom",
+			"name": "Elam",
 			"sci_name": "Elettaria cardamomum",
 			"point1": "Antioxidant & diuretic property lower blood pressure & oral intake of Greater cardamom oil is useful for asthma",
 			"point2": "Contain cancer fighting compounds & chewing seeds can treat bad breath & cavities.",
@@ -112,7 +112,7 @@
 		},
 		{
 			"id": "12",
-			"name": "Pera/ Guava",
+			"name": "Pera",
 			"sci_name": "Psidium guajava",
 			"point1": "Fruit is good for skin & decoction of leaves  relieves from cough & cold.",
 			"point2": "Disinfects the respiratory tract, throat & lungs.",
@@ -122,7 +122,7 @@
 		},
 		{
 			"id": "13",
-			"name": "Irumban puli",
+			"name": "Irumbanpuli",
 			"sci_name": "Averrhoa bilimbi",
 			"point1": "Fruit can treat cough, diabetes, blood pressure.",
 			"point2": "Leaves paste can cure itches, swelling, rheumatism, mumps.",
@@ -132,7 +132,7 @@
 		},
 		{
 			"id": "14",
-			"name": "Tea plant",
+			"name": "Tea",
 			"sci_name": "Camellia sinensis",
 			"point1": "Tea helps in weight loss.",
 			"point2": "Protect bones effective in herbal treatment for rheumatoid arthritis, infection and impaired immune function.",
@@ -142,7 +142,7 @@
 		},
 		{
 			"id": "15",
-			"name": "Samudrapacha",
+			"name": "Samudra pacha",
 			"sci_name": "Argyreia Nervosa",
 			"point1": "Serves as tonic for nervous system.",
 			"point2": "Can stop bleeding from wounds.",
@@ -172,7 +172,7 @@
 		},
 		{
 			"id": "18",
-			"name": "Thazhuthama/ Punarnava ",
+			"name": "Thazhuthama",
 			"sci_name": "Boerhavia diffusa",
 			"point1": "Diuretic in nature & acts as a slight laxative which prevents constipation & purify blood.",
 			"point2": "Improves health of heart & white punarnava cures eye disorders.",
@@ -192,7 +192,7 @@
 		},
 		{
 			"id": "20",
-			"name": "Muringha",
+			"name": "Muringa",
 			"sci_name": "Moringa oleifera",
 			"point1": "Seed oil can protect & nourishes hair & protect liver damage caused by anti-tuberculosis drugs.",
 			"point2": "Anti-inflammatory property prevents edema from developing.",
@@ -212,7 +212,7 @@
 		},
 		{
 			"id": "22",
-			"name": "Arya veppu/ Neem",
+			"name": "Arya vepp",
 			"sci_name": "Azadirachta Indica",
 			"point1": "Used as an insecticide & stem, root, bark can be used in tonic & astringent.",
 			"point2": "Seed oil are used for leprosy & intestinal worms.",

@@ -19,7 +19,7 @@ class BndBox extends StatelessWidget {
         boxHeight = 180.0;
         return Positioned(
           left: 10,
-          top: screenH-boxHeight,
+          top: screenH - boxHeight,
           bottom: 20,
           right: 10,
           // width: screenW,
@@ -33,6 +33,18 @@ class BndBox extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
+                Column(
+                  children: <Widget>[
+                    Icon(
+                      Icons.touch_app,
+                      color: Colors.white24,
+                    ),
+                    Text(
+                      "tap",
+                      style: TextStyle(color: Colors.white24,),
+                    ),
+                  ],
+                ),
                 Text(
                   "${re["label"]}",
                   style: TextStyle(
